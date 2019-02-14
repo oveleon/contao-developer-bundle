@@ -1,7 +1,7 @@
 {
   "name":"oveleon/contao-developer-bundle",
   "type":"contao-bundle",
-  "description":"Helper for Contao.",
+  "description":"Helper for Contao 4 Open Source CMS",
   "keywords":["contao","developer-bundle"],
   "homepage":"https://www.ovealeon.de/",
   "license":"MIT",
