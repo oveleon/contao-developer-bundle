@@ -17,3 +17,5 @@ array_insert($GLOBALS['TL_CTE'], 1, array
 
 $GLOBALS['TL_WRAPPERS']['start'][] = 'wrapperStart';
 $GLOBALS['TL_WRAPPERS']['stop'][]  = 'wrapperStop';
+
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('Oveleon\ContaoDeveloperBundle\InsertTags', 'replaceGetInsertTags');
