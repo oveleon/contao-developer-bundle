@@ -31,7 +31,7 @@ class ContentWrapperStart extends \ContentElement
 		{
 			$this->strTemplate = 'be_wildcard';
 			$this->Template = new \BackendTemplate($this->strTemplate);
-			$this->Template->title = 'Wrapper Start';
+			$this->Template->title = ($this->cssID[0] != '' ? '#'.$this->cssID[0].': ' : '') . ($this->cssID[1] != '' ? '.'.str_replace(' ', ' .', $this->cssID[1]) : '');
 		}
 	}
 }
