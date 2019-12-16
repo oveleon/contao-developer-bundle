@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/default.php" source-language="en">
+    <body>
+      <trans-unit id="CTE.wrapperStart.0">
+        <source>Wrapper start</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStart.1">
+        <source>Generates the opening part of a DIV container.</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStop.0">
+        <source>Wrapper stop</source>
+      </trans-unit>
+      <trans-unit id="CTE.wrapperStop.1">
+        <source>Generates the closing part of a DIV container.</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
