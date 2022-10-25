@@ -8,12 +8,16 @@
 
 namespace Oveleon\ContaoDeveloperBundle;
 
+use Contao\BackendTemplate;
+use Contao\ContentElement;
+use Contao\System;
+
 /**
  * Front end content element "wrapper stop".
  *
  * @author Fabian Ekert <fabian@oveleon.de>
  */
-class ContentWrapperStop extends \ContentElement
+class ContentWrapperStop extends ContentElement
 {
 
 	/**
@@ -27,10 +31,13 @@ class ContentWrapperStop extends \ContentElement
 	 */
 	protected function compile()
 	{
-		if (TL_MODE == 'BE')
-		{
-			$this->strTemplate = 'be_wildcard';
-			$this->Template = new \BackendTemplate($this->strTemplate);
-		}
+        $request = System::getContainer()->get('request_stack')->getCurrentRequest();
+
+        if ($request && System::getContainer()->get('contao.routing.scope_matcher')->isBackendRequest($request))
+        {
+            $this->strTemplate = 'be_wildcard';
+
+            $this->Template = new BackendTemplate($this->strTemplate);
+        }
 	}
 }

@@ -8,6 +8,8 @@
 
 namespace Oveleon\ContaoDeveloperBundle;
 
+use Contao\Frontend;
+
 /**
  * Replace insert tag "get" with a get parameter
  *
@@ -15,7 +17,7 @@ namespace Oveleon\ContaoDeveloperBundle;
  *
  * @return string
  */
-class InsertTags extends \Frontend
+class InsertTags extends Frontend
 {
     public function replaceGetInsertTags($strTag)
     {
